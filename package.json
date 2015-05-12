@@ -5,7 +5,8 @@
   "keywords": [
     "aurelia",
     "plugin",
-    "skeleton"
+    "skeleton",
+    "leaflet"
   ],
   "homepage": "http://aurelia.io",
   "bugs": {
