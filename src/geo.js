@@ -1,10 +1,11 @@
 import L from 'leaflet';
 
-export class AureliaLeaflet extend L {
-  constructor(geo) {
+export class AureliaLeaflet extends L {
+  constructor() {
     this.model = {
-      geo: geo,
+      geo: 'this.LatLng',
       zoom: 15
-    }
+    };
+    debugger;
   }
 }
