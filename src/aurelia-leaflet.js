@@ -1,12 +1,12 @@
 import L from 'leaflet';
 
-export class AureliaLeaflet extends L {
+export class AureliaLeaflet {
+
   constructor() {
-    var model = {
+    //this.l = L;
+    this.model = {
       geo: 'this.LatLng',
       zoom: 15
     };
-    super();
-    debugger;
   }
 }

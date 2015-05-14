@@ -22,12 +22,11 @@ var AureliaLeaflet = (function (_L) {
   function AureliaLeaflet() {
     _classCallCheck(this, AureliaLeaflet);
 
+    _get(Object.getPrototypeOf(AureliaLeaflet.prototype), 'constructor', this).call(this);
     var model = {
       geo: 'this.LatLng',
       zoom: 15
     };
-    _get(Object.getPrototypeOf(AureliaLeaflet.prototype), 'constructor', this).call(this);
-    debugger;
   }
 
   _inherits(AureliaLeaflet, _L);
