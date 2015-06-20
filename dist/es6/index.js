@@ -1,3 +1,3 @@
 export function configure(aurelia){
-  aurelia.globalizeResources('./aurelia-leaflet');
+  aurelia.globalizeResources('./hello-world');
 }

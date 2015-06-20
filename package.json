@@ -1,12 +1,11 @@
 {
   "name": "aurelia-skeleton-plugin",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A starter kit for building an Aurelia plugin.",
   "keywords": [
     "aurelia",
     "plugin",
-    "skeleton",
-    "leaflet"
+    "skeleton"
   ],
   "homepage": "http://aurelia.io",
   "bugs": {
@@ -31,10 +30,11 @@
     "jasmine-core": "^2.1.3",
     "jshint-stylish": "^1.0.0",
     "karma": "^0.12.28",
-    "karma-babel-preprocessor": "^5.1.0",
+    "karma-babel-preprocessor": "^5.2.1",
     "karma-chrome-launcher": "^0.1.7",
+    "karma-coverage": "^0.3.1",
     "karma-jasmine": "^0.3.5",
-    "karma-jspm": "^1.1.4",
+    "karma-jspm": "^1.1.5",
     "object.assign": "^1.0.3",
     "require-dir": "^0.1.0",
     "run-sequence": "^1.0.2",
@@ -42,37 +42,36 @@
     "yargs": "^2.1.1"
   },
   "jspm": {
+    "registry": "npm",
     "main": "index",
     "format": "register",
     "directories": {
       "lib": "dist/system"
     },
-    "dependencies": {
-      "leaflet": "npm:leaflet@^0.7.3"
-    },
     "devDependencies": {
-      "aurelia-tools": "jspm:aurelia-tools@^0.1.3",
-      "conventional-changelog": "jspm:conventional-changelog@0.0.11",
-      "del": "jspm:del@^1.1.0",
-      "gulp": "jspm:gulp@^3.8.10",
-      "gulp-babel": "jspm:gulp-babel@^5.1.0",
-      "gulp-bump": "jspm:gulp-bump@^0.1.11",
-      "gulp-jshint": "jspm:gulp-jshint@^1.9.0",
-      "gulp-yuidoc": "jspm:gulp-yuidoc@^0.1.2",
-      "jasmine-core": "jspm:jasmine-core@^2.1.3",
-      "jshint-stylish": "jspm:jshint-stylish@^1.0.0",
-      "karma": "jspm:karma@^0.12.28",
-      "karma-babel-preprocessor": "jspm:karma-babel-preprocessor@^5.1.0",
-      "karma-chrome-launcher": "jspm:karma-chrome-launcher@^0.1.7",
-      "karma-jasmine": "jspm:karma-jasmine@^0.3.5",
-      "karma-jspm": "jspm:karma-jspm@^1.1.4",
-      "object.assign": "jspm:object.assign@^1.0.3",
-      "require-dir": "jspm:require-dir@^0.1.0",
-      "run-sequence": "jspm:run-sequence@^1.0.2",
-      "traceur": "github:jmcriffey/bower-traceur@0.0.87",
-      "traceur-runtime": "github:jmcriffey/bower-traceur-runtime@0.0.87",
-      "vinyl-paths": "jspm:vinyl-paths@^1.0.0",
-      "yargs": "jspm:yargs@^2.1.1"
+      "aurelia-tools": "^0.1.3",
+      "conventional-changelog": "0.0.11",
+      "del": "^1.1.0",
+      "gulp": "^3.8.10",
+      "gulp-babel": "^5.1.0",
+      "gulp-bump": "^0.1.11",
+      "gulp-jshint": "^1.9.0",
+      "gulp-yuidoc": "^0.1.2",
+      "jasmine-core": "^2.1.3",
+      "jshint-stylish": "^1.0.0",
+      "karma": "^0.12.28",
+      "karma-babel-preprocessor": "^5.2.1",
+      "karma-chrome-launcher": "^0.1.7",
+      "karma-coverage": "^0.3.1",
+      "karma-jasmine": "^0.3.5",
+      "karma-jspm": "^1.1.5",
+      "object.assign": "^1.0.3",
+      "require-dir": "^0.1.0",
+      "run-sequence": "^1.0.2",
+      "traceur": "github:jmcriffey/bower-traceur@0.0.88",
+      "traceur-runtime": "github:jmcriffey/bower-traceur-runtime@0.0.88",
+      "vinyl-paths": "^1.0.0",
+      "yargs": "^2.1.1"
     }
   }
 }

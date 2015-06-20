@@ -7,6 +7,6 @@ define(['exports'], function (exports) {
   exports.configure = configure;
 
   function configure(aurelia) {
-    aurelia.globalizeResources('./aurelia-leaflet');
+    aurelia.globalizeResources('./hello-world');
   }
 });

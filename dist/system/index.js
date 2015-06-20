@@ -1,14 +1,14 @@
 System.register([], function (_export) {
+  'use strict';
+
   _export('configure', configure);
 
   function configure(aurelia) {
-    aurelia.globalizeResources('./aurelia-leaflet');
+    aurelia.globalizeResources('./hello-world');
   }
 
   return {
     setters: [],
-    execute: function () {
-      'use strict';
-    }
+    execute: function () {}
   };
 });
