@@ -1,11 +1,11 @@
-import AureliaLeaflet from '../../src/aurelia-leaflet';
+import AureliaLeaflet from 'Leaflet/Leaflet';
 
 describe('aurelia-leaflet', () => {
   var map;
   var options;
 
   beforeEach(() => {
-    map = new AureliaLeaflet;
+    map = new AureliaLeaflet();
     options = {
       center: [51.505, -0.09],
       zoom: 14
@@ -13,11 +13,8 @@ describe('aurelia-leaflet', () => {
   });
 
   it('have to be defined', () => {
-<<<<<<< HEAD
-    expect(AureliaLeaflet).toBeDefined();
-  });
-}
-=======
+
+    //expect(AureliaLeaflet).toBeDefined();
     expect(map).toBeDefined(true);
   });
 
@@ -26,4 +23,4 @@ describe('aurelia-leaflet', () => {
     expect(map).toBeDefined(true);
   });
 });
->>>>>>> origin/1
+

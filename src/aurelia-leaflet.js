@@ -1,14 +1,13 @@
-import L from 'leaflet';
+import L from 'Leaflet/Leaflet';
 
 export class AureliaLeaflet {
   constructor() {
-<<<<<<< HEAD
     this.l = L;
     this.model = {
       geo: 'this.LatLng',
       zoom: 15
     };
-=======
+
     this.L = L;
   }
 
@@ -17,7 +16,6 @@ export class AureliaLeaflet {
       center: [51.505, -0.09],
       zoom: 14
     });
->>>>>>> origin/1
   }
 
   __createMap(options) {
