@@ -1,4 +1,4 @@
-define(['exports', 'leaflet'], function (exports, _leaflet) {
+define(['exports', 'Leaflet/Leaflet'], function (exports, _LeafletLeaflet) {
   'use strict';
 
   Object.defineProperty(exports, '__esModule', {
@@ -11,11 +11,17 @@ define(['exports', 'leaflet'], function (exports, _leaflet) {
 
   function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 
-  var _L = _interopRequireDefault(_leaflet);
+  var _L = _interopRequireDefault(_LeafletLeaflet);
 
   var AureliaLeaflet = (function () {
     function AureliaLeaflet() {
       _classCallCheck(this, AureliaLeaflet);
+
+      this.l = _L['default'];
+      this.model = {
+        geo: 'this.LatLng',
+        zoom: 15
+      };
 
       this.L = _L['default'];
     }

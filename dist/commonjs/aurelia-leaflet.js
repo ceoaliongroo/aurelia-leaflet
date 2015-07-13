@@ -10,15 +10,21 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'd
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 
-var _leaflet = require('leaflet');
+var _LeafletLeaflet = require('Leaflet/Leaflet');
 
-var _leaflet2 = _interopRequireDefault(_leaflet);
+var _LeafletLeaflet2 = _interopRequireDefault(_LeafletLeaflet);
 
 var AureliaLeaflet = (function () {
   function AureliaLeaflet() {
     _classCallCheck(this, AureliaLeaflet);
 
-    this.L = _leaflet2['default'];
+    this.l = _LeafletLeaflet2['default'];
+    this.model = {
+      geo: 'this.LatLng',
+      zoom: 15
+    };
+
+    this.L = _LeafletLeaflet2['default'];
   }
 
   _createClass(AureliaLeaflet, [{
