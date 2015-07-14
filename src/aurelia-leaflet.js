@@ -1,4 +1,4 @@
-import L from 'Leaflet/Leaflet';
+import L from 'leaflet';
 
 export class AureliaLeaflet {
   constructor() {

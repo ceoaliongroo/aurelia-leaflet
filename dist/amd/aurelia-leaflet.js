@@ -1,4 +1,4 @@
-define(['exports', 'Leaflet/Leaflet'], function (exports, _LeafletLeaflet) {
+define(['exports', 'leaflet'], function (exports, _leaflet) {
   'use strict';
 
   Object.defineProperty(exports, '__esModule', {
@@ -11,7 +11,7 @@ define(['exports', 'Leaflet/Leaflet'], function (exports, _LeafletLeaflet) {
 
   function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 
-  var _L = _interopRequireDefault(_LeafletLeaflet);
+  var _L = _interopRequireDefault(_leaflet);
 
   var AureliaLeaflet = (function () {
     function AureliaLeaflet() {

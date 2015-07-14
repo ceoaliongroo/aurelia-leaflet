@@ -1,4 +1,4 @@
-System.register(['Leaflet/Leaflet'], function (_export) {
+System.register(['leaflet'], function (_export) {
   'use strict';
 
   var L, AureliaLeaflet;
@@ -8,8 +8,8 @@ System.register(['Leaflet/Leaflet'], function (_export) {
   function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 
   return {
-    setters: [function (_LeafletLeaflet) {
-      L = _LeafletLeaflet['default'];
+    setters: [function (_leaflet) {
+      L = _leaflet['default'];
     }],
     execute: function () {
       AureliaLeaflet = (function () {

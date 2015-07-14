@@ -1,4 +1,4 @@
-import AureliaLeaflet from 'Leaflet/Leaflet';
+import AureliaLeaflet from 'leaflet';
 
 describe('aurelia-leaflet', () => {
   var map;
