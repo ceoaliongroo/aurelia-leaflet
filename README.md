@@ -10,8 +10,15 @@ This isn a plugin you can use in your [Aurelia](http://www.aurelia.io/) applicat
 
 ## Usage
 
-Add in the Aurelia startup 
+Define the plugin in the [Aurelia Startup and Configuration](http://aurelia.io/docs.html#startup-and-configuration) process.
 
 ```javascript
   aurelia.use.plugin('aurelia-leaflet');
+```
+
+Load the template
+
+```html
+  <require from="aurelia-leaflet/aurelia-leaflet"></require>
+  <aurelia-leaflet></aurelia-leaflet>
 ```
