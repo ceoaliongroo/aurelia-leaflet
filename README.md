@@ -25,7 +25,7 @@ Load the template
 
 Finally you could see a map like this:
  
-![example](docs/assets/map.example.png "Example Map")
+![example](https://raw.githubusercontent.com/ceoaliongroo/aurelia-leaflet/master/doc/assets/map.example.png "Example Map")
 
 ## Changelog
 
