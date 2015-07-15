@@ -22,3 +22,15 @@ Load the template
   <require from="aurelia-leaflet/aurelia-leaflet"></require>
   <aurelia-leaflet></aurelia-leaflet>
 ```
+
+Finally you could see a map like this:
+ 
+![example](docs/assets/map.example.png "Example Map")
+
+## Changelog
+
+[Click here to see changelog](doc/CHANGELOG.md)
+
+## License
+
+MIT - [click for details](LICENSE)

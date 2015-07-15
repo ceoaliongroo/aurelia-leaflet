@@ -19,25 +19,35 @@ define(['exports', 'leaflet'], function (exports, _leaflet) {
 
       this.l = _L['default'];
       this.model = {
-        geo: 'this.LatLng',
-        zoom: 15
+        geo: {
+          latitude: 51.505,
+          longitude: -0.09
+        },
+        zoom: 16
       };
-
-      this.L = _L['default'];
     }
 
     _createClass(AureliaLeaflet, [{
       key: 'attached',
       value: function attached() {
-        __createMap({
+        this.__createMap({
           center: [51.505, -0.09],
-          zoom: 14
+          zoom: 16
         });
       }
     }, {
       key: '__createMap',
       value: function __createMap(options) {
-        this.map = this.L.map('map', options);
+        this.map = this.l.map('map', options);
+        this.__setMapLayer();
+      }
+    }, {
+      key: '__setMapLayer',
+      value: function __setMapLayer() {
+        this.l.tileLayer('http://{s}.tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png', {
+          maxZoom: 18,
+          attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+        }).addTo(this.map);
       }
     }]);
 
