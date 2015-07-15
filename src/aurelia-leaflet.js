@@ -4,7 +4,10 @@ export class AureliaLeaflet {
   constructor() {
     this.l = L;
     this.model = {
-      geo: 'this.LatLng',
+      geo: {
+        latitude: 51.505,
+        longitude: -0.09
+      },
       zoom: 15
     };
 
