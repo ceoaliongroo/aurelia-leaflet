@@ -1,22 +1,16 @@
 import L from 'leaflet';
+import {customElement, bindable} from 'aurelia-framework';
 
+@customElement('aurelia-leaflet')
 export class AureliaLeaflet {
+  @bindable options
+
   constructor() {
     this.l = L;
-    this.model = {
-      geo: {
-        latitude: 51.505,
-        longitude: -0.09
-      },
-      zoom: 16
-    };
   }
 
   attached() {
-    this.__createMap({
-      center: [51.505, -0.09],
-      zoom: 16
-    });
+    this.__createMap(this.options);
   }
 
   __createMap(options) {
