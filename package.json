@@ -31,7 +31,7 @@
     "jshint-stylish": "^1.0.0",
     "karma": "^0.12.28",
     "karma-babel-preprocessor": "^5.2.1",
-    "karma-chrome-launcher": "^0.1.7",
+    "karma-chrome-launcher": "^0.2.0",
     "karma-coverage": "^0.3.1",
     "karma-jasmine": "^0.3.5",
     "karma-jspm": "^1.1.5",
@@ -49,6 +49,7 @@
       "lib": "dist/amd"
     },
     "dependencies": {
+      "aurelia/dependency-injection": "github:aurelia/dependency-injection@^0.9.0",
       "leaflet": "^0.7.3"
     },
     "devDependencies": {

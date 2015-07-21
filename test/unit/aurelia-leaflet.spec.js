@@ -1,20 +1,23 @@
-import AureliaLeaflet from 'leaflet';
+import {AureliaLeaflet} from '../../src/aurelia-leaflet';
+import {Container} from 'aurelia-dependency-injection';
+import {BehaviorInstance} from 'aurelia-templating';
 
-describe('aurelia-leaflet', () => {
+
+describe('The aurelia-leaflet plugin', () => {
   var map;
   var options;
 
   beforeEach(() => {
-    map = new AureliaLeaflet();
     options = {
       center: [51.505, -0.09],
       zoom: 14
-    }
+    };
+
+    new Container().makeGlobal();
+    map = BehaviorInstance.createForUnitTest(AureliaLeaflet);
   });
 
   it('have to be defined', () => {
-
-    //expect(AureliaLeaflet).toBeDefined();
     expect(map).toBeDefined(true);
   });
 

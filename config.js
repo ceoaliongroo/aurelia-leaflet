@@ -9,9 +9,18 @@ System.config({
 
 System.config({
   "map": {
+    "aurelia/dependency-injection": "github:aurelia/dependency-injection@0.9.0",
     "leaflet": "npm:leaflet@0.7.3",
     "traceur": "github:jmcriffey/bower-traceur@0.0.88",
     "traceur-runtime": "github:jmcriffey/bower-traceur-runtime@0.0.88",
+    "github:aurelia/dependency-injection@0.9.0": {
+      "aurelia-logging": "github:aurelia/logging@0.6.1",
+      "aurelia-metadata": "github:aurelia/metadata@0.7.0",
+      "core-js": "npm:core-js@0.9.18"
+    },
+    "github:aurelia/metadata@0.7.0": {
+      "core-js": "npm:core-js@0.9.18"
+    },
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.3.0"
     },
@@ -99,6 +108,11 @@ System.config({
       "is-array": "npm:is-array@1.0.1"
     },
     "npm:constants-browserify@0.0.1": {
+      "systemjs-json": "github:systemjs/plugin-json@0.1.0"
+    },
+    "npm:core-js@0.9.18": {
+      "fs": "github:jspm/nodelibs-fs@0.1.2",
+      "process": "github:jspm/nodelibs-process@0.1.1",
       "systemjs-json": "github:systemjs/plugin-json@0.1.0"
     },
     "npm:core-util-is@1.0.1": {
