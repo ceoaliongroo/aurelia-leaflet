@@ -1,6 +1,10 @@
 # aurelia-leaflet
 
-This isn a plugin you can use in your [Aurelia](http://www.aurelia.io/) application. It add a [Leaflet](http://leafletjs.com/) map in your application.
+Plugin you can use in your [Aurelia](http://www.aurelia.io/) application. It add a [Leaflet](http://leafletjs.com/) map in your application.
+
+## WIP - Disclosure
+
+This plugin is Work in Progess, defining his archicture and also his implementation. It's not ready to use in `live/production` enviroments but if you want can try, test and contribute, will be great!.
 
 ## Installation
 
