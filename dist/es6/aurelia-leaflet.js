@@ -1,27 +1,26 @@
 import L from 'leaflet';
+import {customElement, bindable} from 'aurelia-framework';
 
+@customElement('aurelia-leaflet')
 export class AureliaLeaflet {
+  @bindable options;
+
   constructor() {
     this.l = L;
-    this.model = {
-      geo: {
-        latitude: 51.505,
-        longitude: -0.09
-      },
-      zoom: 16
-    };
   }
 
   attached() {
-    this.__createMap({
-      center: [51.505, -0.09],
-      zoom: 16
-    });
+    if (!this.options) {
+      throw new Error('[aurelia-leaflet] - needs to define a geolocation as center and zoom.');
+    }
+
+    this.__createMap(this.options);
   }
 
   __createMap(options) {
     this.map = this.l.map('map', options);
     this.__setMapLayer();
+    this.map.invalidateSize(false);
   }
 
   __setMapLayer() {
