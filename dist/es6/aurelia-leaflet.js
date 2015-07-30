@@ -3,19 +3,24 @@ import {customElement, bindable} from 'aurelia-framework';
 
 @customElement('aurelia-leaflet')
 export class AureliaLeaflet {
-  @bindable options
+  @bindable options;
 
   constructor() {
     this.l = L;
   }
 
   attached() {
+    if (!this.options) {
+      throw new Error('[aurelia-leaflet] - needs to define a geolocation as center and zoom.');
+    }
+
     this.__createMap(this.options);
   }
 
   __createMap(options) {
     this.map = this.l.map('map', options);
     this.__setMapLayer();
+    this.map.invalidateSize(false);
   }
 
   __setMapLayer() {

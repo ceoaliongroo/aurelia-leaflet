@@ -38,6 +38,10 @@ System.register(['leaflet', 'aurelia-framework'], function (_export) {
         }, {
           key: 'attached',
           value: function attached() {
+            if (!this.options) {
+              throw new Error('[aurelia-leaflet] - needs to define a geolocation as center and zoom.');
+            }
+
             this.__createMap(this.options);
           }
         }, {
@@ -45,6 +49,7 @@ System.register(['leaflet', 'aurelia-framework'], function (_export) {
           value: function __createMap(options) {
             this.map = this.l.map('map', options);
             this.__setMapLayer();
+            this.map.invalidateSize(false);
           }
         }, {
           key: '__setMapLayer',
