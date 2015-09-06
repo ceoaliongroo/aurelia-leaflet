@@ -1,4 +1,10 @@
 
+## 0.0.4 (2015-07-30)
+
+* **feat(AureliaLeaflet):** support bind map options, to create the map.
+* **docs(all):** updated readme and contribution.
+* **docs(readme):** fix example map image.
+
 ## 0.0.3 (2015-07-13)
 
 * **feat(AureliaLeafet):** Create a new map, with default values.
