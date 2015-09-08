@@ -76,6 +76,10 @@
       "traceur-runtime": "github:jmcriffey/bower-traceur-runtime@0.0.88",
       "vinyl-paths": "^1.0.0",
       "yargs": "^2.1.1"
+    },
+    "buildConfig": {
+      "transpileES6": true,
+      "minify": true
     }
   }
 }
