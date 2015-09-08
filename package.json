@@ -49,6 +49,7 @@
       "lib": "dist/amd"
     },
     "dependencies": {
+      "aurelia-framework": "github:aurelia/framework@^0.16.0",
       "aurelia/dependency-injection": "github:aurelia/dependency-injection@^0.9.0",
       "leaflet": "^0.7.3"
     },
