@@ -13,6 +13,6 @@ before_script:
 
   # Install dependencies
   - npm install -g gulp jspm
-  - jspm -y install
+  - jspm install -y
 
 script: gulp test
