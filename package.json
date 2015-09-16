@@ -33,9 +33,12 @@
     "karma-babel-preprocessor": "^5.2.1",
     "karma-chrome-launcher": "^0.2.0",
     "karma-coverage": "^0.3.1",
+    "karma-firefox-launcher": "^0.1.6",
     "karma-jasmine": "^0.3.5",
     "karma-jspm": "^1.1.5",
+    "karma-phantomjs-launcher": "^0.2.1",
     "object.assign": "^1.0.3",
+    "phantomjs": "^1.9.18",
     "require-dir": "^0.1.0",
     "run-sequence": "^1.0.2",
     "vinyl-paths": "^1.0.0",
@@ -49,6 +52,7 @@
       "lib": "dist/amd"
     },
     "dependencies": {
+      "aurelia-framework": "github:aurelia/framework@^0.16.0",
       "aurelia/dependency-injection": "github:aurelia/dependency-injection@^0.9.0",
       "leaflet": "^0.7.3"
     },
